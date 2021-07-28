@@ -50,7 +50,7 @@ const reducerEntrenador = (state = initialState,action)=>{
     }
 
 
-    //minuto 39 https://www.youtube.com/watch?v=HhtqSwUgP1U&ab_channel=EDteam
+    
     return state
 }
 
