@@ -1,24 +1,23 @@
-import logo from './logo.svg';
+
 import './App.css';
+import { Provider } from "react-redux"
+import store from "./store"
+import Jugadores from './components/Jugadores';
+import EquipoSeleccionado from './components/EquipoSeleccionado';
+import "./styles/styles.css";
+
+//react practice from this youtube tutorial https://www.youtube.com/watch?v=HhtqSwUgP1U&ab_channel=EDteam
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main>
+      <Provider store ={store}>
+        <h1>My game</h1>
+        <Jugadores />
+        <EquipoSeleccionado />
+        
+      </Provider>
+    </main>
   );
 }
 
